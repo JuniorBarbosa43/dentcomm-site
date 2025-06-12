@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>DentComm - Agência de Marketing para Dentistas</title>
+    <meta name="description" content="A DentComm transforma dentistas em marcas fortes com marketing, automação, tráfego e gestão.">
+    
+    <meta property="og:title" content="DentComm - Agência de Marketing para Dentistas">
+    <meta property="og:description" content="A DentComm transforma dentistas em marcas fortes com marketing, automação, tráfego e gestão.">
+    <meta property="og:image" content="https://placehold.co/1200x630/16FEED/212121?text=DentComm">
+    <meta property="og:url" content="URL_DO_SEU_SITE_AQUI">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="./public/css/main.css">
+    
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700;900&display=swap" rel="stylesheet">
+    
+    <link rel="icon" href="./public/favicon.ico" type="image/x-icon">
+</head>
+<body class="bg-eerie-black antialiased">
+    <div id="progress-bar"></div>
+
+    <header class="header-glass sticky top-0 z-50 py-4 px-4 md:px-8">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="font-bold text-2xl text-white nav-link" data-page="home" aria-label="Página Inicial DentComm">
+                DentComm<span class="text-fluorescent-cyan">.</span>
+            </a>
+            <nav class="hidden md:flex items-center space-x-6">
+                <a href="#" class="nav-link text-white hover:text-fluorescent-cyan transition duration-300" data-page="home">Início</a>
+                <a href="#" class="nav-link text-white hover:text-fluorescent-cyan transition duration-300" data-page="about">Sobre</a>
+                <a href="#products" class="nav-link text-white hover:text-fluorescent-cyan transition duration-300" data-page="home#products">Produtos</a>
+                <a href="#" class="nav-link text-white hover:text-fluorescent-cyan transition duration-300" data-page="blog">Blog</a>
+                <a href="#" class="nav-link text-white hover:text-fluorescent-cyan transition duration-300" data-page="contact">Contato</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                 <div class="flex items-center text-sm">
+                    <button id="lang-pt" class="font-bold text-white transition-colors" aria-label="Mudar para Português">PT</button>
+                    <span class="mx-1 text-dim-gray">/</span>
+                    <button id="lang-es" class="text-dim-gray transition-colors" aria-label="Mudar para Espanhol">ES</button>
+                </div>
+                <a href="#" data-page="contact" class="nav-link hidden sm:block bg-fluorescent-cyan text-eerie-black font-bold py-2 px-5 rounded-lg hover:bg-white transition duration-300">
+                    <span data-lang-pt="Comece Agora" data-lang-es="Empieza Ahora">Comece Agora</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main id="page-container"></main>
+
+    <footer class="bg-gray-900 text-white mt-20">
+         <div class="container mx-auto px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div><h3 class="font-bold text-xl">DentComm.</h3><p class="mt-2 text-dim-gray" data-lang-pt="Marketing, Automação e Estratégia para Dentistas." data-lang-es="Marketing, Automatización y Estrategia para Dentistas.">Marketing, Automação e Estratégia para Dentistas.</p></div>
+                <div><h4 class="font-bold" data-lang-pt="Navegação" data-lang-es="Navegación">Navegação</h4><ul class="mt-4 space-y-2"><li><a href="#" class="text-dim-gray hover:text-fluorescent-cyan nav-link" data-page="about">Sobre</a></li><li><a href="#" class="text-dim-gray hover:text-fluorescent-cyan nav-link" data-page="home#products">Produtos</a></li><li><a href="#" class="text-dim-gray hover:text-fluorescent-cyan nav-link" data-page="blog">Blog</a></li><li><a href="#" class="text-dim-gray hover:text-fluorescent-cyan nav-link" data-page="contact">Contato</a></li></ul></div>
+                <div><h4 class="font-bold" data-lang-pt="Legal" data-lang-es="Legal">Legal</h4><ul class="mt-4 space-y-2"><li><a href="#" class="text-dim-gray hover:text-fluorescent-cyan" data-lang-pt="Política de Privacidade" data-lang-es="Política de Privacidad">Política de Privacidade</a></li><li><a href="#" class="text-dim-gray hover:text-fluorescent-cyan" data-lang-pt="Termos de Uso" data-lang-es="Términos de Uso">Termos de Uso</a></li></ul></div>
+                <div><h4 class="font-bold" data-lang-pt="Contato" data-lang-es="Contacto">Contato</h4><p class="mt-4 text-dim-gray">contato@dentcomm.com</p></div>
+            </div>
+            <div class="mt-12 border-t border-gray-800 pt-8 text-center text-dim-gray text-sm"><p>&copy; 2025 DentComm. <span data-lang-pt="Todos os direitos reservados." data-lang-es="Todos los derechos reservados.">Todos os direitos reservados.</span></p></div>
+        </div>
+    </footer>
+    
+    <a href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20planos%20da%20DentComm." class="whatsapp-float" target="_blank" aria-label="Fale conosco no WhatsApp"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg></a>
+
+    <script src="./src/js/lang.js" defer></script>
+    <script src="./src/js/scroll.js" defer></script>
+    <script src="./src/js/app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "dentcomm-site",
+  "version": "1.0.0",
+  "description": "Website institucional da DentComm",
+  "main": "index.html",
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/css/styles.css -o ./public/css/main.css --minify",
+    "watch:css": "tailwindcss -i ./src/css/styles.css -o ./public/css/main.css --watch"
+  },
+  "keywords": [
+    "tailwind",
+    "marketing",
+    "odontologia"
+  ],
+  "author": "DentComm",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3"
+  }
+}
