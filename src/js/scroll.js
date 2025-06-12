@@ -1,9 +1,7 @@
-// --- Scroll Animations & Progress Bar ---
 let scrollObserver;
 const progressBar = document.getElementById('progress-bar');
 
 function setupScrollAnimations() {
-    // Disconnect previous observer if it exists
     if (scrollObserver) {
         scrollObserver.disconnect();
     }
@@ -24,15 +22,23 @@ function setupScrollAnimations() {
     document.querySelectorAll('.animated-bar').forEach(bar => scrollObserver.observe(bar));
 }
 
-function updateProgressBar() {
-    const activePage = document.querySelector('#page-container > div');
-    if (!progressBar || !activePage || !activePage.id.startsWith('product-')) {
-        if(progressBar) progressBar.style.width = '0%';
+function updateProgressBar(pageId) {
+    if (!progressBar) return;
+
+    const isProductPage = pageId && pageId.startsWith('product-');
+    progressBar.style.display = isProductPage ? 'block' : 'none';
+
+    if (!isProductPage) {
+        progressBar.style.width = '0%';
         return;
     }
+
     const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
     const scrollPercent = (scrollTop / (scrollHeight - clientHeight)) * 100;
     progressBar.style.width = `${scrollPercent}%`;
 }
 
-window.addEventListener('scroll', updateProgressBar);
+window.addEventListener('scroll', () => {
+    const currentPageId = document.querySelector('#page-container > div')?.id;
+    updateProgressBar(currentPageId);
+});
