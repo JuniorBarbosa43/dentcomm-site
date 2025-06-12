@@ -76,12 +76,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initial page load
     handleNavigation('home');
 
-    // Setup navigation links
-    navLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
+    // Setup navigation links globally
+    document.body.addEventListener('click', function(e) {
+        const navLink = e.target.closest('.nav-link');
+        if (navLink) {
             e.preventDefault();
-            const pageId = this.dataset.page;
+            const pageId = navLink.dataset.page;
             handleNavigation(pageId);
-        });
+        }
     });
 });

@@ -1,0 +1,37 @@
+<div id="contact">
+    <section class="py-20 px-4 md:px-8">
+        <div class="container mx-auto">
+            <div class="text-center scroll-reveal">
+                <h1 class="font-display text-4xl md:text-6xl" data-lang-pt="Vamos conversar?" data-lang-es="¿Hablamos?">Vamos conversar?</h1>
+                <p class="text-dim-gray text-xl mt-2" data-lang-pt="Preencha o formulário e um especialista entrará em contato." data-lang-es="Rellene el formulario y un especialista se pondrá en contacto.">Preencha o formulário e um especialista entrará em contato.</p>
+            </div>
+            <div class="mt-16 max-w-2xl mx-auto scroll-reveal">
+                <form id="rd-form" action="#" method="POST">
+                    <input type="hidden" name="token_rdstation" value="SEU_TOKEN_AQUI" />
+                    <input type="hidden" name="identificador" value="formulario-contato-dentcomm" />
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <input type="text" name="name" placeholder="Seu nome" required class="bg-gray-800 border border-gray-700 rounded-lg py-3 px-4 text-white focus:outline-none focus:ring-2 focus:ring-fluorescent-cyan">
+                        <input type="email" name="email" placeholder="Seu melhor e-mail" required class="bg-gray-800 border border-gray-700 rounded-lg py-3 px-4 text-white focus:outline-none focus:ring-2 focus:ring-fluorescent-cyan">
+                    </div>
+                    <div class="mt-6">
+                        <input type="tel" name="phone" placeholder="Seu WhatsApp com DDD" required class="w-full bg-gray-800 border border-gray-700 rounded-lg py-3 px-4 text-white focus:outline-none focus:ring-2 focus:ring-fluorescent-cyan">
+                    </div>
+                    <div class="mt-6">
+                        <select name="custom_fields[objetivo]" class="w-full bg-gray-800 border border-gray-700 rounded-lg py-3 px-4 text-white focus:outline-none focus:ring-2 focus:ring-fluorescent-cyan">
+                            <option value="" data-lang-pt="Qual seu principal objetivo?" data-lang-es="¿Cuál es su principal objetivo?">Qual seu principal objetivo?</option>
+                            <option value="captar_pacientes" data-lang-pt="Captar mais pacientes" data-lang-es="Captar más pacientes">Captar mais pacientes</option>
+                            <option value="automatizar_processos" data-lang-pt="Automatizar processos" data-lang-es="Automatizar procesos">Automatizar processos</option>
+                            <option value="melhorar_posicionamento" data-lang-pt="Melhorar meu posicionamento" data-lang-es="Mejorar mi posicionamiento">Melhorar meu posicionamento</option>
+                        </select>
+                    </div>
+                    <div class="mt-6">
+                        <textarea name="message" rows="4" placeholder="Sua mensagem (opcional)" class="w-full bg-gray-800 border border-gray-700 rounded-lg py-3 px-4 text-white focus:outline-none focus:ring-2 focus:ring-fluorescent-cyan"></textarea>
+                    </div>
+                    <div class="mt-6 text-center">
+                        <button type="submit" class="bg-fluorescent-cyan text-eerie-black font-bold py-4 px-12 rounded-lg text-lg hover:bg-white transition duration-300"><span data-lang-pt="Enviar" data-lang-es="Enviar">Enviar</span></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</div>

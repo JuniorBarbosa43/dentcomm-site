@@ -3,6 +3,11 @@ let scrollObserver;
 const progressBar = document.getElementById('progress-bar');
 
 function setupScrollAnimations() {
+    // Disconnect previous observer if it exists
+    if (scrollObserver) {
+        scrollObserver.disconnect();
+    }
+    
     scrollObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -20,7 +25,8 @@ function setupScrollAnimations() {
 }
 
 function updateProgressBar() {
-    if (!progressBar || progressBar.style.display === 'none') {
+    const activePage = document.querySelector('#page-container > div');
+    if (!progressBar || !activePage || !activePage.id.startsWith('product-')) {
         if(progressBar) progressBar.style.width = '0%';
         return;
     }

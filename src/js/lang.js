@@ -6,6 +6,7 @@ const langButtons = {
 let currentLang = 'pt';
 
 function setLanguage(lang) {
+    document.body.style.transition = 'opacity 0.2s ease-in-out';
     document.body.style.opacity = '0';
     setTimeout(() => {
         currentLang = lang;
